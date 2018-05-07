@@ -1,0 +1,67 @@
+/* CSS for core-project (radar) specific content
+*Adam Johnston's python portfolio website
+*/
+
+
+/* ### Title section ###*/
+
+#titleSkeleton{
+	padding-top: 200px;
+	padding-left: 30%;
+	height: 500px;
+	/*border-style: solid;
+	border-width: 1px;
+	*/
+}
+
+#titleSection{
+	width: 650px;	
+}
+
+
+/* ### Our Story section ###*/
+
+#infoSkeleton{
+	padding-top: 100px;
+	height: 500px;
+}
+
+#contentSection{
+	height: 400px;
+	width: 70%;
+}
+
+
+#imageSection{
+	width: 20%;
+	height: 300px;
+	float: left;
+}
+
+#waterbodyImage{
+	width: 15%;
+	position: absolute;
+	left: 0;
+}
+
+#textSection{
+	width: 60%;
+	height: 300px;
+	float: left;
+	padding-top: 50px;
+	padding-left: 1%;
+}
+
+#downloadSection{
+	width: 19%;
+	height: 300px;
+	float: left;
+	padding-top: 50px;
+}
+
+#downloadIcon{
+	width: 50%;
+	padding-left: 50%;
+	padding-top: 80px;
+}
+

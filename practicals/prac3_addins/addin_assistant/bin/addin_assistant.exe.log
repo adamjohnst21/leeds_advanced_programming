@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "addin_assistant.pyw", line 233, in SelectFolder
+  File "addin.pyc", line 609, in __init__
+ValueError: C:\Users\University\Dropbox\University\Advanced_programming\practicals\prac3_addins is not empty. Please select an empty directory to host this new addin.
+Traceback (most recent call last):
+  File "addin_assistant.pyw", line 233, in SelectFolder
+  File "addin.pyc", line 609, in __init__
+ValueError: C:\Users\University\Dropbox\University\Advanced_programming\practicals\prac3_addins is not empty. Please select an empty directory to host this new addin.

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+       &middot; Geography Programming Courses
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://www.geog.leeds.ac.uk/courses/computing/css/page.css">
+  <link rel="stylesheet" id="pagestyle" href="http://www.geog.leeds.ac.uk/courses/computing/css/aestheticsLight.css">
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.geog.leeds.ac.uk/courses/computing/css/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://www.geog.leeds.ac.uk/courses/computing/css/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+
+<link rel="stylesheet" type="text/css" href="http://www.geog.leeds.ac.uk/courses/computing/css/cookieconsent.min.css" />
+
+<SCRIPT type="text/javascript" src="http://www.geog.leeds.ac.uk/courses/computing/local-scripts/themeScript.js"></SCRIPT>
+<script src="http://www.geog.leeds.ac.uk/courses/computing/external-scripts/cookieconsent.min.js"></script>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+<script>
+
+var cookieOk = true;
+
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+
+	onInitialise: function (status) {
+	  var type = this.options.type;
+	  var didConsent = this.hasConsented();
+	  
+
+	  if (type == 'opt-out' && !didConsent) {
+		theme = "Light";
+		antitheme = "Dark";
+		cookieOk = false;
+	 } else {
+		cookieOk = true;
+		theme = getTheme();
+		if  (theme != null) setFirstStyleSheet(theme, getAntitheme());
+	  }
+	},
+	 
+	onStatusChange: function(status, chosenBefore) {
+	  var type = this.options.type;
+	  var didConsent = this.hasConsented();
+
+	  if (type == 'opt-out' && !didConsent) {
+		cookieOk = false;
+	  } else {
+		cookieOk = true;
+	  }
+	},
+	 
+	onRevokeChoice: function() {
+	  var type = this.options.type;
+	  if (type == 'opt-in') {
+		cookieOk = true;
+	  }
+	  if (type == 'opt-out') {
+		cookieOk = false;
+	  }
+	},
+
+
+  "palette": {
+    "popup": {
+      "background": "#252e39"
+    },
+    "button": {
+      "background": "#14a7d0"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "type": "opt-out",
+  "content": {
+    "message": "This website uses cookies to control its colour scheme.  Opt out to control this per-page.",
+    "deny": "Opt out",
+    "link": "Learn more about cookies"
+  }
+  
+	  
+  
+})});
+
+
+
+</script>
+
+
+
+
+<script>
+
+
+function setFirstStyleSheet(theme, antitheme){
+	document.getElementById('pagestyle').setAttribute('href', "http://www.geog.leeds.ac.uk/courses/computing/css/aesthetics" + theme + ".css");
+	document.getElementById('pageStyleIcon').setAttribute('src', "http://www.geog.leeds.ac.uk/courses/computing/css/" + antitheme + ".png");
+	document.getElementById('pageStyleIcon').setAttribute('alt', antitheme + " theme");
+	document.getElementById('pageStyleIcon').onclick = function () {setStyleSheet(theme, antitheme);};
+	
+}
+
+
+// Script based on https://www.developphp.com/video/JavaScript/Change-Style-Sheet-Using-Tutorial-CSS-Swap-Stylesheet
+function setStyleSheet(theme, antitheme){
+
+	if (theme == null) {
+		theme = "Light";
+		antitheme = "Dark";
+	} else { 
+	
+		if (theme == "Light") {
+			theme = "Dark";
+			antitheme = "Light";
+		} else {
+			theme = "Light";
+			antitheme = "Dark";
+		}
+	}
+	
+	if (cookieOk != false) setTheme(theme);
+	if (cookieOk != false) setAntitheme(antitheme);
+	
+	document.getElementById('pagestyle').setAttribute('href', "http://www.geog.leeds.ac.uk/courses/computing/css/aesthetics" + theme + ".css");
+	document.getElementById('pageStyleIcon').setAttribute('src', "http://www.geog.leeds.ac.uk/courses/computing/css/" + antitheme + ".png");
+	document.getElementById('pageStyleIcon').setAttribute('alt', antitheme + " theme");
+	document.getElementById('pageStyleIcon').onclick = function () {setStyleSheet(theme, antitheme);};
+	
+	
+}
+</script>
+  
+
+</head>
+
+
+  <BODY onload="checkTheme();">
+  	
+<img id="pageStyleIcon"  alt="Dark theme" src="http://www.geog.leeds.ac.uk/courses/computing/css/Dark.png" onclick="setStyleSheet('Dark','Light');" style="width:20px;position: absolute;right: 20px;clear:right;margin:25px 20px 0px 0px; z-index: 1;"><img>
+
+
+     
+	
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="http://www.geog.leeds.ac.uk/courses/computing" title="Home">Geography Programming Courses</a>
+            <small></small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+	 
+        <DIV class=content>
+
+<DIV class=header>
+<H1>Data processing</H1>
+</DIV>
+
+<DIV class=across>
+<DIV class="hr"><HR /></DIV>
+<P class="gap">
+
+<STRONG>In this practical, we'll work through some tutorials on data processing. One for pandas, and then 
+a second for bokeh, a library that uses webpages for display, making the link between Python and JavaScript.</STRONG>
+</P>
+
+<P class="gap">
+In this part, we'll also refamiliarise ourselves with Jupyter/iPython notebooks. Jupyter makes a great data analysis environment because 
+you can annotate the code as you go with images, text, and  links, making it a great data processing auditing system. It also means that 
+reports can continually be kept up to date by connecting them to data stores and re-running them when a refresh is needed. Finally, it can be 
+integrated with dynamic elements to produce interactive data "dashboards". 
+</P>
+
+<P class="gap">
+First up, then, pandas. For this, we'll work through the Software Carpentry course materials on pandas. 
+<A href="https://software-carpentry.org/about/">Software Carpentry</A> 
+is an international organisation of <A href="https://software-carpentry.org/team/">volunteers</A> teaching good programming style to researchers. They have a 
+<A href="https://software-carpentry.org/lessons/">wide variety of courses</A> in everything from shell scripting to Git, but one of their latest courses 
+is on learning to program in Python using pandas. 
+</P>
+<P class="gap">
+As we already know quite a lot of Python, we don't need to do the whole of the course: just 
+"<A href="http://swcarpentry.github.io/python-novice-gapminder/setup/">Setup</A>" to download the dataset (unzip it somewhere sensible &ndash; it should create a <KBD>data</KBD> directory) 
+and get Jupyter up and running (run it from a command prompt open in the <I>same</I> directory as the <KBD>data</KBD> directory, i.e. not the <KBD>data</KBD> directory, but the directory containing it); and 
+then parts 7, 8 and 9 of the 
+<A href="http://swcarpentry.github.io/python-novice-gapminder/">course materials</A> (that is, from "Reading Tabular Data into DataFrames" to "Lunch").
+Give it a go. A few things to help:
+</P>
+<UL>
+<LI>You'll need to make yourself a new Python notebook in the directory you open Jupyter from.</LI>
+<LI>Remember that you press <KBD>SHIFT + ENTER</KBD> to run a box of code in Jupyter.</LI>
+<LI>Note that complicated notebooks can take a few seconds (up to 30) to run. If they don't quickly complain, they're probably running.</LI>
+<LI>The microbe data question is theoretical &ndash; you don't actually have this data downloaded.</LI>
+<LI>To understand <CODE>wealth_score = mask_higher.aggregate('sum',axis=1)/len(data.columns)</CODE> remember that in Python <CODE>True == 1</CODE> and 
+<CODE>False == 0</CODE> (numbers &gt;1 also == True) and that in pandas <CODE>axis=1</CODE> works across rows. Print <CODE>mask_higher</CODE> if that helps.</LI>
+<LI>"Magic" commands are commands directly to iPython/Jupyter. They start with a percentage sign.</LI>
+</P>
+
+<DIV class="hrdot"><HR /></DIV>
+
+<P class="gap">
+Now you've had a bit of a go at working with Jupyter, it is probably worth going back to 
+<A href="http://www.geog.leeds.ac.uk/courses/computing/practicals/python/running-python/jupyter.html">our first practical from the 
+core course</A>. Read it through again and refamiliarise yourself with the the Jupyter can do. Then check out the 
+example notebook listed in that practical and see if you can work out how it is working (note, it may take a few seconds to work). It uses numpy, but perhaps more interesting is that 
+it includes interactive elements. See if you can understand how these work; the documentation is linked at the top of the notebook.
+</P>		
+
+<P class="gap">
+Once you've done that, go on to the next section to look at Bokeh. Jupyter will let us save notebooks as static copies in HTML, but this isn't quite the same as 
+integrating analyses dynamically into a website. Bokeh is much more focused on this job.
+</P>		
+
+<DIV class="hr"><HR /></DIV>
+
+
+<P class=gap>
+<OL>
+<LI class="compact"><A href="index.html">This page</A></LI>
+<LI class="compact"><A href="2.html">Bokeh</A> &lt;-- next</LI>
+</OL>
+
+
+</DIV>
+
+<DIV class="hr"><HR /></DIV>
+
+
+</DIV>
+
+</DIV>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    
+	
+	<footer class="site-footer">
+
+</footer>
+
+
+  </body>
+</html>

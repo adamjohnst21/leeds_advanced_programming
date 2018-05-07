@@ -1,0 +1,22 @@
+/* CSS for homepage specific content
+*QG Mapper website
+*/
+
+
+/* ### Title section ###*/
+
+#titleSkeleton{
+	padding-top: 200px;
+	padding-left: 25%;
+	height: 600px;
+	/*border-style: solid;
+	border-width: 1px;
+	*/
+}
+
+#titleSection{
+	width: 80%;
+	
+}
+
+
