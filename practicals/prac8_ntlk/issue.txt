@@ -1,5 +1,0 @@
-UnicodeDecodeError: 'charmap' codec can't decode byte 0x9d in position 1018: character maps to <undefined>
-
-Couldn't open the text file containing the poem. I tried the open() functions, even specifying the encoding type, as recommended 
-<a href="https://stackoverflow.com/questions/9233027/unicodedecodeerror-charmap-codec-cant-decode-byte-x-in-position-y-character?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa" title ="Stackoverflow thread">here</a>
-to no avail. 
